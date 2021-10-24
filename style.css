@@ -1,0 +1,168 @@
+/* Navbar */
+.navbar {
+  z-index: 1;
+  text-shadow: 1px 1px 2px white;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+/* Jumbotron */
+.jumbotron {
+  width: 100%;
+  background-image: url(gallery-sm/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 40vh;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.judul {
+  align-self: center;
+  font-weight: 200;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+}
+
+/* About */
+.about a {
+  text-decoration: none;
+}
+
+.judulAbout {
+  margin-top: 20px;
+}
+.isiAbout {
+  margin: 10px 0 30px;
+  font-size: 1rem;
+}
+
+/* gambar */
+.sectionB {
+  background-image: url(gallery-sm/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 35vh;
+  overflow: hidden;
+}
+/* Isi Section B */
+.sectionB h2 {
+  font-weight: 200;
+  font-size: 1.225rem;
+  color: white;
+  text-shadow: 1px 2px 5px black;
+}
+
+/* ISi SectionC */
+.gallery h3 {
+  margin: 60px 0 0;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: rgb(247, 247, 247);
+  margin: 15px 0;
+  transform: translate(0, -50px);
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.card:hover {
+  transform: scale(1.03, 1.03);
+  transition-duration: 0.5s;
+}
+
+.card img {
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #000b76;
+  padding: 50px 0;
+  font-size: 0.8rem;
+  margin-top: -2px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: red;
+}
+
+/* Active */
+.aktif {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* Media Desktop */
+@media (min-width: 992px) {
+  .navbar-nav a {
+    margin: 0 15px;
+  }
+  .navbar-nav a:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60%;
+    border-bottom: 2px solid rgb(68, 68, 241);
+    margin: auto;
+    padding-bottom: 2px;
+    margin-bottom: -4px;
+  }
+  #about {
+    margin-top: 350px;
+  }
+
+  .jumbotron {
+    height: 100vh;
+    position: relative;
+    top: -56px;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  .isiAbout {
+    font-size: 1em;
+    margin: 20px 0 90px;
+  }
+
+  .gallery h3 {
+    margin: 100px 0 50px;
+  }
+
+  .sectionB {
+    height: 90vh;
+  }
+
+  .sectionB h2 {
+    font-size: 2.75rem;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+}
