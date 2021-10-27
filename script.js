@@ -22,3 +22,23 @@ if (intViewportWidth < 992) {
 } else {
   nav.classList.remove("fixed-top", "bg-light");
 }
+
+// modal image card
+
+const cards = document.querySelectorAll(".card");
+const modal = document.querySelector(".modal");
+const modalImage = document.querySelector(".modal-image");
+const cardImage = document.querySelectorAll(".card img");
+
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("click", function () {
+    modalImage.src = `gallery/${i + 1}.jpg`;
+  });
+}
+
+// cards.forEach(function (c, i) {
+//   c.addEventListener("click", function (e) {
+//     modalImage.src = `gallery/${cards.index}.jpg`;
+//     console.log(cards[i]);
+//   });
+// });

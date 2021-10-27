@@ -73,6 +73,7 @@
   transform: translate(0, -50px);
   opacity: 0;
   transition-duration: 1s;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -87,6 +88,16 @@
 
 .card a {
   text-decoration: none;
+}
+
+/* modal */
+.modal-body {
+  padding: 3px;
+  margin: 0;
+}
+
+.modal-body img {
+  width: 90%;
 }
 
 /* Footer */
@@ -114,6 +125,10 @@
 .aktif {
   transform: translate(0, 0);
   opacity: 1;
+}
+
+.modal-active {
+  display: block;
 }
 
 /* Media Desktop */
