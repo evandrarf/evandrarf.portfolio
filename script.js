@@ -35,10 +35,3 @@ for (let i = 0; i < cards.length; i++) {
     modalImage.src = `gallery/${i + 1}.jpg`;
   });
 }
-
-// cards.forEach(function (c, i) {
-//   c.addEventListener("click", function (e) {
-//     modalImage.src = `gallery/${cards.index}.jpg`;
-//     console.log(cards[i]);
-//   });
-// });
