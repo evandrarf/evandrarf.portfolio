@@ -30,8 +30,14 @@ const modal = document.querySelector(".modal");
 const modalImage = document.querySelector(".modal-image");
 const cardImage = document.querySelectorAll(".card img");
 
-for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("click", function () {
+// for (let i = 0; i < cards.length; i++) {
+//   cards[i].addEventListener("click", function () {
+//     modalImage.src = `gallery/${i + 1}.jpg`;
+//   });
+// }
+
+cards.forEach((c, i) => {
+  c.addEventListener("click", function () {
     modalImage.src = `gallery/${i + 1}.jpg`;
   });
-}
+});
