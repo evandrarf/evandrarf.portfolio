@@ -1,3 +1,5 @@
+const qsl = (el) => document.querySelector(el);
+
 $(window).scroll(function () {
   let wScroll = $(this).scrollTop();
 
@@ -41,3 +43,12 @@ cards.forEach((c, i) => {
     modalImage.src = `gallery/${i + 1}.jpg`;
   });
 });
+
+const date = new Date();
+const myBirth = new Date(2006, 6, 27);
+const year = Math.floor((date - myBirth) / 31560000000);
+const months = Math.floor(((date - myBirth) % 31560000000) / 2628202743);
+const p1 = qsl(".p1");
+
+console.log(months);
+p1.textContent = `Usia : ${year} tahun, ${months} bulan.`;
