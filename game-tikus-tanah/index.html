@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/8fd548c750.js" crossorigin="anonymous"></script>
+    <title>Whack a Mole</title>
+  </head>
+  <body>
+    <h1>Whack a Mole</h1>
+
+    <div class="boardContainer">
+      <div class="board">
+        <p>
+          <i class="fas fa-heart"></i>
+          <span class="changeBoard">3</span>
+        </p>
+      </div>
+      <div class="board">
+        <p>
+          Score :
+          <span class="scoreBoard">0</span>
+        </p>
+      </div>
+    </div>
+
+    <button type="button" onclick="start()">Start</button>
+
+    <div class="container">
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+    </div>
+
+    <div class="result">
+      <i class="far fa-times-circle"></i>
+      <p>Your Score : <span class="resultScore"></span> pts</p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
